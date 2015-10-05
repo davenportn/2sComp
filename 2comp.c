@@ -20,6 +20,19 @@ int main(int argc, char *argv[])
 	}
 	else {
 		//For now, just end. Then plan what will happen
+		//
+		//verify that it's decimal. If it isn't, then return dec value
+		
+
+		
+		//for ()
+		//{
+
+		//}
+
+
+
+		printf("%d\n", strlen(str));
 		return 0;
 	}	
 }
