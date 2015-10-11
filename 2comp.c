@@ -2,38 +2,21 @@
 #include <string.h>
 int main(int argc, char *argv[])
 {
-	//Check for correct number of arguements 	
-	if (argc > 2 || argc == 1)
+	int i;
+	int userInput; // To be retrieved from command line
+	//Check for correct number of arguements 
+	
+	printf("Please enter a single binary number:\n");
+	scanf("%d",&userInput);
+
+
+	//for each char in string, make sure is binary number
+	for(i = 0; i < userInput; i++ )
 	{
-		printf("Please use the appropriate number of arguements\n");
-		return 1;
+		printf("%d\n", i);
 	}
 
-	printf("Input: %s\n", argv[1]);
-
-
-	if ((strlen(argv[1]) % 4) != 0 )
-	{
-		//Not in standard byte, will address
-		printf("Not in byte form\n");
-		return 1;
-	}
-	else {
-		//For now, just end. Then plan what will happen
-		//
-		//verify that it's decimal. If it isn't, then return dec value
-		
-
-		
-		//for ()
-		//{
-
-		//}
-
-
-
-		printf("%d\n", strlen(str));
-		return 0;
-	}	
+	printf("You entered: %d\n",userInput);
+	
 }
 
